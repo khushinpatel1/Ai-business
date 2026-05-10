@@ -1,5 +1,22 @@
-import NextAuth from "next-auth";
-import { authOptions } from "@/lib/auth";
-
-const handler = NextAuth(authOptions);
-export { handler as GET, handler as POST };
+{
+  "name": "ai-dev-platform",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "next build"
+  },
+  "dependencies": {
+    "next": "14.2.3",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "zod": "3.23.8",
+    "pino": "9.0.0",
+    "framer-motion": "11.0.28",
+    "@prisma/client": "5.14.0",
+    "next-auth": "4.24.7"
+  },
+  "devDependencies": {
+    "typescript": "5.4.5",
+    "prisma": "5.14.0"
+  }
+}
